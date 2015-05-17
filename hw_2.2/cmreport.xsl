@@ -26,7 +26,7 @@
 				<div class="page" id="page-index">
 					Please select the class.<br/>
 					You can click header cell of table to sort that column.<br/><br/>
-					0 in Metrics 4 might means Infinity.<br/><br/>
+					NaN in Metrics 4 means Infinity.<br/><br/>
 					<table class="sortable">
 						<thead>
 							<tr>
@@ -47,7 +47,7 @@
 					Significant Lines 1: metrics 1 > 0.5<br/>
 					Significant Lines 2: metrics 2 > mean (lazy)<br/>
 					Significant Lines 3: metrics 3 > mean (lazy)<br/>
-					Significant Lines 4: metrics 4 > mean (lazy)
+					Significant Lines 4: metrics 4 = Infinity
 				</div>
 			</div>
 		</div>
@@ -77,7 +77,7 @@
 		<td><xsl:value-of select="count(.//line[@m1 > $m1-mean])"/></td>
 		<td><xsl:value-of select="count(.//line[@m2 > $m2-mean])"/></td>
 		<td><xsl:value-of select="count(.//line[@m3 > $m3-mean])"/></td>
-		<td><xsl:value-of select="count(.//line[@m4 > $m4-mean])"/></td>
+		<td><xsl:value-of select="count(.//line[@m4 = 'Inf'])"/></td>
 	</tr>
 </xsl:template>
 <xsl:template match="class" mode="page">
