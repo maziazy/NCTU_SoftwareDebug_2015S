@@ -1,0 +1,176 @@
+body
+{
+	margin: 5px;
+	background: #eee;
+}
+
+ul
+{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+li
+{
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+}
+
+textarea
+{
+	border: #ccc solid 2px;
+	border-radius: 5px;
+	background: #eee;
+	font-family: courier new;
+	font-size: 14pt;
+}
+
+h3
+{
+	margin: 5px 0;
+}
+
+p
+{
+	margin: 10px 25px 20px 25px;
+}
+
+.clear
+{
+	clear: both;
+}
+
+/*--------------------*/
+
+#banner
+{
+	margin: 10px 20px;
+	/*padding: 0px 75px;*/
+	padding: 0px;
+	height: 64px;
+	/*background: #eee url('../image/database.png') right no-repeat;*/
+	font-family: verdana;
+	font-size: 36pt;
+	text-align: right;
+}
+
+#footer
+{
+	margin: 15px 5px;
+	font-family: verdana;
+	font-size: 10pt;
+	text-align: center;
+}
+
+#nav ul
+{
+	margin: -30px 30px;
+	height: 30px;
+}
+
+#nav li
+{
+	float: left;
+	margin: 0px 7px -2px 7px;
+	padding: 0px 15px;
+	height: 30px;
+	border-top: solid 3px #9cf;
+	border-radius: 3px;
+	background: #ddd;
+	color: #666;
+	font-size: 16pt;
+	cursor: pointer;
+	opacity: 0.5;
+}
+
+#nav li.selected
+{
+	border-top: solid 3px #f9c;
+	background: #ddd;
+	color: #000;
+	opacity: 1;
+}
+
+#nav li:hover
+{
+	border-top: solid 3px #6f6;
+	opacity: 1;
+}
+
+#nav li.selected:hover
+{
+	border-top: solid 3px #f9c;
+}
+
+#content
+{
+	clear: both;
+	margin: 0px 10px;
+	padding: 15px 20px;
+	border-radius: 15px;
+	background: #ddd;
+	font-size: 16pt;
+}
+
+#content .page
+{
+	display: none;
+}
+
+.halfbox
+{
+	float: left;
+	width: 48%;
+	padding: 0px 1%;
+	
+	text-align: center;
+}
+
+#log, #result
+{
+	width: 100%;
+	height: 400px;
+}
+
+#Processing
+{
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	
+	padding-top: 200px;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	color: #fff;
+	font-size: 36pt;
+	text-align: center;
+	text-shadow: #fff 0 0 30px;
+}
+
+
+/*--------------------*/
+
+/* Sortable tables */
+table.sortable thead {
+	background-color: #aaa;
+	color: #333;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+table.sortable thead th, td {
+	padding: 1px 10px;
+}
+
+table.sortable td {
+	background-color: #eaeaea;
+	cursor: default;
+}
+
+table.sortable tr:hover td {
+	background-color: #ecc;
+}
